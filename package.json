@@ -1,5 +1,6 @@
 {
   "name": "@hexlet/code",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/mariiamelon/hexlet-code/issues"
   },
-  "homepage": "https://github.com/mariiamelon/hexlet-code#readme"
+  "homepage": "https://github.com/mariiamelon/hexlet-code#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "make": "^0.0.0"
+  },
+"bin": {
+  "brain-games": "bin/brain-games.js"
+  }
 }
