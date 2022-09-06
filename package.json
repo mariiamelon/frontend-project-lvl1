@@ -19,9 +19,10 @@
   "homepage": "https://github.com/mariiamelon/hexlet-code#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "make": "^0.0.0"
+    "make": "^0.0.0",
+    "readline-sync": "^1.4.10"
   },
-"bin": {
-  "brain-games": "bin/brain-games.js"
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   }
 }
