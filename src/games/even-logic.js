@@ -23,7 +23,7 @@ const getRandomInt = (max) => {
       console.log('Correct!');
     } else {
       const opposite = (answer === 'yes' ? 'no' : 'yes');
-      const errorMessage = `"${answer}" is wrong answer ;(. Correct answer was '${opposite}'. /n Let's try again, ${userName}!`;
+      const errorMessage = `'${answer}' is wrong answer ;(. Correct answer was '${opposite}'. \n Let's try again, ${userName}!`;
       console.log(errorMessage);
       return errorMessage;
     }
