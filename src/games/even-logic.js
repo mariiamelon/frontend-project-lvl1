@@ -1,13 +1,4 @@
 import {newGame, getRandomInt} from '../index.js';
-//console.log('Welcome to the Brain Games!');
-//export const userName = readlineSync.question("May I have your name? ");
-//console.log(`Hello, ${userName}!`);
-
-//const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-//export const getRandomInt = (max) => {
-  //return Math.floor(Math.random() * max);
-//};
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
