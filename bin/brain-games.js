@@ -1,2 +1,2 @@
-#!/opt/homebrew/bin/node node
+#!/usr/bin/env node node
 import {userName} from '../src/cli.js';
