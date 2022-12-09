@@ -15,7 +15,7 @@ export const gameCalculation = (num1, sign, num2) => {
     default:
       throw new Error(`operation ${sign} is not supported`);
         }
-      }
+      };
 
 const gameQuestionAnswer = () => {
   const sign = mathOperator[getRandomInt(3)];
