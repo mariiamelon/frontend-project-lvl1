@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
 export const getRandomInt = (max) => {
-  return Math.floor(Math.random() * max);
+  const randomNumber = Math.floor(Math.random() * max);
+  return randomNumber;
 };
 
 export const newGame = (gameRules, gameQuestionAnswer) => {

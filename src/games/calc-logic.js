@@ -1,11 +1,11 @@
-import {newGame, getRandomInt} from '../index.js';
+import { newGame, getRandomInt } from '../index.js';
 
 const gameRules = 'What is the result of the expression?';
 
 const mathOperator = ['+', '-', '*'];
 
 export const gameCalculation = (num1, sign, num2) => {
-     switch (sign) {
+  switch (sign) {
     case '+':
       return num1 + num2;
     case '-':
@@ -14,8 +14,8 @@ export const gameCalculation = (num1, sign, num2) => {
       return num1 * num2;
     default:
       throw new Error(`operation ${sign} is not supported`);
-        }
-      };
+  }
+};
 
 const gameQuestionAnswer = () => {
   const sign = mathOperator[getRandomInt(3)];
@@ -25,6 +25,7 @@ const gameQuestionAnswer = () => {
   const preAnswer = gameCalculation(num1, sign, num2);
   const answer = preAnswer.toString();
   return [question, answer];
- };
-      
-export const brainCalc = () => newGame(gameRules, gameQuestionAnswer);
+};
+
+const brainCalc = () => newGame(gameRules, gameQuestionAnswer);
+export default brainCalc;

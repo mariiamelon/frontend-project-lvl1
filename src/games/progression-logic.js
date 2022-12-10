@@ -1,23 +1,22 @@
-import {getRandomInt, newGame} from '../index.js';
-
+import { getRandomInt, newGame } from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
 const makeProgression = (num, step) => {
-  let progression = [];
-    for (let i = 0; i < 10; i += 1) {
-      const current = num + i * step;
-      progression.push(current);
-      }
-      return progression
-    };
+  const progression = [];
+  for (let i = 0; i < 10; i += 1) {
+    const current = num + i * step;
+    progression.push(current);
+  }
+  return progression;
+};
 
-    const progressionWidthHiddenElement = (progression, element) => {
-      const newArr = progression.slice(0);
-      const newElement = element;
-      newArr[newElement] = '..';
-      return newArr.join(' ');
-    };
+const progressionWidthHiddenElement = (progression, element) => {
+  const newArr = progression.slice(0);
+  const newElement = element;
+  newArr[newElement] = '..';
+  return newArr.join(' ');
+};
 
 const gameQuestionAnswer = () => {
   const num = getRandomInt(100);
@@ -28,6 +27,7 @@ const gameQuestionAnswer = () => {
   const preAnswer = num + (randomStep * randomHiddenNumber);
   const answer = preAnswer.toString();
   return [question, answer];
- };
-      
-export const brainProgression = () => newGame(gameRules, gameQuestionAnswer);
+};
+
+const brainProgression = () => newGame(gameRules, gameQuestionAnswer);
+export default brainProgression;

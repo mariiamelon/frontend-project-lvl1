@@ -1,4 +1,4 @@
-import {newGame, getRandomInt} from '../index.js';
+import { newGame, getRandomInt } from '../index.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -10,4 +10,5 @@ const gameQuestionAnswer = () => {
   return [question, answer];
 };
 
-export const brainEven = () => newGame(gameRules, gameQuestionAnswer);
+const brainEven = () => newGame(gameRules, gameQuestionAnswer);
+export default brainEven;
