@@ -1,4 +1,4 @@
-import {newGame, getRandomInt} from '/Users/dynkinamaria/hexlet-code/src/index.js';
+import {newGame, getRandomInt} from '../index.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers';
 

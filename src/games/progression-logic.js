@@ -1,4 +1,4 @@
-import {getRandomInt, newGame} from '/Users/dynkinamaria/hexlet-code/src/index.js';
+import {getRandomInt, newGame} from '../index.js';
 
 
 const gameRules = 'What number is missing in the progression?';
